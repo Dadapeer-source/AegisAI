@@ -3,6 +3,7 @@ import psutil
 import os
 import win32gui
 import win32process
+from email_alert import send_email_alert
 
 from automation.actions import Actions
 from logic.decision_engine import DecisionEngine

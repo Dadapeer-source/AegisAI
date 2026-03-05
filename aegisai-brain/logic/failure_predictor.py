@@ -1,7 +1,7 @@
 class FailurePredictor:
 
     # 🔥 Prediction thresholds
-    CPU_THRESHOLD = 20
+    CPU_THRESHOLD = 95
     MEMORY_THRESHOLD = 65
     DISK_THRESHOLD = 95
     PROCESS_COUNT_THRESHOLD = 300

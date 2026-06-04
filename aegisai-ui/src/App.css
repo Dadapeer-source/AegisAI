@@ -1,0 +1,122 @@
+/* ---------- GLOBAL ---------- */
+
+body{
+margin:0;
+background:#0f172a;
+font-family:Inter, Arial, sans-serif;
+color:white;
+overflow-x:hidden;
+}
+
+
+
+/* ---------- PAGE OPENING EFFECT ---------- */
+
+body{
+animation:pageOpen .6s ease;
+}
+
+@keyframes pageOpen{
+0%{
+opacity:0;
+transform:translateY(20px);
+}
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+
+
+/* ---------- TITLE ANIMATION ---------- */
+
+h1{
+animation:titleAppear .7s ease;
+}
+
+@keyframes titleAppear{
+0%{
+opacity:0;
+transform:translateY(-15px);
+}
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+
+
+/* ---------- DASHBOARD CARD EFFECT ---------- */
+
+.cards > div{
+transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.cards > div:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.6),
+0 0 12px rgba(255,255,255,.18);
+
+}
+
+
+
+/* ---------- ALERT PAGE CARD EFFECT ---------- */
+
+.cardGrid > div{
+transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.cardGrid > div:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.6),
+0 0 12px rgba(255,255,255,.18);
+
+}
+
+
+
+/* ---------- SYSTEM PAGE CARD EFFECT ---------- */
+
+.middleGrid > div,
+.anomalyCard{
+transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.middleGrid > div:hover,
+.anomalyCard:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.6),
+0 0 12px rgba(255,255,255,.18);
+
+}
+
+
+
+/* ---------- TOAST SMOOTH ---------- */
+
+.toastContainer{
+animation:toastAppear .5s ease;
+}
+
+@keyframes toastAppear{
+0%{
+opacity:0;
+transform:translateX(50px);
+}
+100%{
+opacity:1;
+transform:translateX(0);
+}
+}
